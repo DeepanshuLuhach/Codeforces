@@ -15,5 +15,15 @@ typedef vector<long long int> vl;
 int main()
 {
     ios_base::sync_with_stdio(0);cin.tie(NULL);cout.tie(NULL);
-
+    ll n,c=1;
+    cin>>n;
+    int a[n];
+    cin>>a[0];
+    for(int i=1;i<n;i++)
+    {
+        cin>>a[i];
+        if(a[i]!=a[i-1])
+            c++;
+    }
+    cout<<c;
 }
